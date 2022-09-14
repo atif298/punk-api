@@ -1,0 +1,25 @@
+@use "../../assets/sass/.variables.scss" as *;
+
+.card {
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+
+    &__name {
+        margin: 0px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    &__img {
+        width: 75px;
+        height: auto;
+    }
+
+    &__tagline {
+        margin: 0px;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
