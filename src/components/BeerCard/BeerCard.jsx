@@ -15,14 +15,14 @@ const BeerCard = (props) => {
 
   return (
     <div className="card">
-        <p className="card__name">{name}</p>
         <img className="card__img" src={img}/>
+        <p className="card__name">{name}</p>
         <p className="card__tagline">{tagline}</p>
-        <p className="card__firstBrewed">{firstBrewed}</p>
+        <p className="card__firstBrewed">First brewed: {firstBrewed}</p>
         <p className="card__description">{description}</p>
-        <p className="card__abv">{abv}</p>
-        <p className="card__ibu">{ibu}</p>
-        <p className="card__ph" >{ph}</p>
+        <p className="card__abv">ABV: {abv}</p>
+        <p className="card__ibu">IBU: {ibu}</p>
+        <p className="card__ph" >pH: {ph}</p>
     </div>
   );
 };
