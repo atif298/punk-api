@@ -2,8 +2,9 @@ import "./Main.scss";
 import React, { useState, useEffect } from "react";
 import BeerCard from "../../components/BeerCard/BeerCard";
 
-const Main = () => {
+const Main = ({phValue, abvValue}) => {
   const [beers, setBeers] = useState([]);
+
 
   const getBeers = async () => {
     const url = `https://api.punkapi.com/v2/beers`;
@@ -16,8 +17,27 @@ const Main = () => {
     getBeers();
   }, []);
 
-  const beersJSX = (array) => {
-    return array.map((beer, index) => {
+  console.log(phValue);
+  console.log(abvValue);
+
+  const filterByPh = (beerArr, phValue) => {
+    return beerArr.filter((beer) => {
+      if (beer.ph <= phValue ) {
+        return beer
+      }
+    })
+  }
+
+  const filterByAbv = (beerArr, abvValue) => {
+    return beerArr.filter((beer) => {
+      if (beer.abv <= abvValue ) {
+        return beer
+      }
+    })
+  }
+
+  const beersJSX = (beerArr) => {
+    return filterByAbv(filterByPh(beerArr, phValue), abvValue).map((beer, index) => {
         return (
             <div key={index}>
               <BeerCard
