@@ -1,5 +1,23 @@
+@use "./assets/sass/.variables.scss" as *;
+
 .app {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    background-color: $black;
+}
+
+@media screen and ( max-width: 641px) {
+    
+.app {
+    display: flex;
+    flex-direction: column;
+
+    .nav {
+        width: auto;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
 }
