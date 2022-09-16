@@ -1,0 +1,27 @@
+@use "../../assets/sass/.variables.scss" as *;
+
+.nav {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: $dark-blue;
+
+    &__logo {
+        width: 150px;
+        height: auto;
+        padding-bottom: 20px;
+        object-fit: scale-down;
+        background-color: none;
+    }
+
+    &__slider-name {
+        padding-top: 10px;
+        font-size: 17px;
+        color: $white;
+
+
+    }
+}
