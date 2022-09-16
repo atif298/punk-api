@@ -1,0 +1,15 @@
+@use "../../assets/sass/.variables.scss" as *;
+
+.input {
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0;
+    background-color: $white;
+    color: $black;
+    border-style: solid;
+    border-radius: 9px;
+    box-shadow: 0px 0px 11px $shadow-blue;
+  }
+  .input:focus {
+    outline:none;
+  }
