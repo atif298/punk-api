@@ -23,7 +23,8 @@ One of the components used within the application is the slider filter.
 
 <img src="src/assets/images/readMe/slider.png" width=250>
 
-Another component was the search bar that had been implemented within the other filters to search within the specified options.<br>
+Another component was the search bar that had been implemented within the other filters to search within the specified options.
+
 <img src="src/assets/images/readMe/searchBar.png" width=250>
 
 [Back to Profile](https://github.com/atif298)
